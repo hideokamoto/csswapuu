@@ -1,5 +1,92 @@
-@charset "utf-8";
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<dom-module id="css-wapuu">
+  <template>
+    <div class="canvas">
 
+      <!-- しっぽ・線/塗り -->
+      <div class="line-tail1"></div>
+      <div class="line-tail2"></div>
+      <div class="tail1"></div>
+      <div class="tail2"></div>
+      <div class="tail3"></div>
+      <div class="tail4"></div>
+
+      <!-- 線 -->
+      <div class="line1"></div>
+      <div class="line2"></div>
+
+      <!-- ボール・wを囲む白線 -->
+      <div class="ball"></div>
+      <div class="ball2"></div>
+      <div class="boll-light"></div>
+      <div class="w-circle"></div>
+      <div class="w-circle-inner"></div>
+
+      <!-- wの字 -->
+      <div class="w-1"></div>
+      <div class="w-2"></div>
+      <div class="w-3"></div>
+      <div class="w-4"></div>
+      <div class="w-5"></div>
+      <div class="w-6"></div>
+      <div class="w-7"></div>
+      <div class="w-8"></div>
+      <div class="w-9"></div>
+      <div class="w-10"></div>
+      <div class="w-11"></div>
+      <div class="w-12"></div>
+      <div class="w-13"></div>
+
+      <!-- 顔・線 -->
+      <div class="line-face1"></div>
+      <div class="line-face2"></div>
+
+      <!-- 両手・線 -->
+      <div class="line-right-hand"></div>
+      <div class="line-left-hand"></div>
+
+      <!-- 左脚・線 -->
+      <div class="line-left-leg"></div>
+
+      <!-- 顔・塗り -->
+      <div class="face"></div>
+      <div class="neck"></div>
+
+      <!-- 胴・塗り -->
+      <div class="body"></div>
+      <div class="belly"></div>
+
+      <!-- 腕・塗り -->
+      <div class="left-hand"></div>
+      <div class="right-hand"></div>
+      <div class="arm"></div>
+
+      <!-- 右足・線/塗り -->
+      <div class="line-right-foot"></div>
+      <div class="right-foot"></div>
+
+      <!-- 左脚・塗り -->
+      <div class="left-leg"></div>
+      <!-- 左足・線/塗り -->
+      <div class="line-left-foot"></div>
+      <div class="left-foot"></div>
+      <div class="thenar"></div>
+
+      <!-- 左耳・線/塗り -->
+      <div class="line-left-ear"></div>
+      <div class="ear-left"></div>
+
+      <!-- 右耳・塗り -->
+      <div class="ear-right"></div>
+
+      <!-- 顔パーツ -->
+      <div class="eye-rignt"></div>
+      <div class="eye-left"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+
+    </div>
+    <style>
 .canvas {
 	position: relative;
   width: 400px;
@@ -7,9 +94,7 @@
 }
 
 /*---------------------------------------
-
   線
-
 ---------------------------------------*/
 
 .line1 {
@@ -81,9 +166,7 @@
 }
 
 /*---------------------------------------
-
   ボールの部分
-
 ---------------------------------------*/
 .ball {
 	background: #035683;
@@ -142,9 +225,7 @@
 }
 
 /*---------------------------------------
-
   wの字
-
 ---------------------------------------*/
 .w-1 {
 	background: #FFF;
@@ -340,9 +421,7 @@
 }
 
 /*---------------------------------------
-
   体の塗り
-
 ---------------------------------------*/
 .body {
   background-color: #ffd215;
@@ -391,7 +470,7 @@
           transform: rotate(53deg);
 }
 
-/* おなかの線の微調整 */
+/* おなかの線の微調整 */
 .belly {
   background-color: #000;
   width: 18px;
@@ -441,9 +520,7 @@
 }
 
 /*---------------------------------------
-
   顔
-
 ---------------------------------------*/
 .line-face1 {
 	background-color: #000;
@@ -522,7 +599,7 @@
           transform: rotate(42deg);
 }
 
-/* 口元微調整 */
+/* 口元微調整 */
 .mouth {
   background-color: #000;
   width: 9px;
@@ -539,9 +616,7 @@
 }
 
 /*---------------------------------------
-
   手
-
 ---------------------------------------*/
 .line-right-hand {
 	background: #000;
@@ -688,7 +763,7 @@
           transform: rotate(188deg);
 }
 
-/* 腕の線、微調整 */
+/* 腕の線、微調整 */
 .arm::before {
   content: "";
   background-color: #000;
@@ -706,9 +781,7 @@
 }
 
 /*---------------------------------------
-
   耳
-
 ---------------------------------------*/
 .line-left-ear {
 	background-color: #000;
@@ -851,9 +924,7 @@
 }
 
 /*---------------------------------------
-
   足
-
 ---------------------------------------*/
 .line-left-leg {
   background-color: #000;
@@ -1121,9 +1192,7 @@
 }
 
 /*---------------------------------------
-
   首
-
 ---------------------------------------*/
 .neck {
   background-color: #ffd215;
@@ -1173,9 +1242,7 @@
 }
 
 /*---------------------------------------
-
   目
-
 ---------------------------------------*/
 .eye-rignt {
 	background-color: #000;
@@ -1198,9 +1265,7 @@
 }
 
 /*---------------------------------------
-
   鼻
-
 ---------------------------------------*/
 .nose {
 	background-color: #000;
@@ -1229,9 +1294,7 @@
 }
 
 /*---------------------------------------
-
   しっぽ
-
 ---------------------------------------*/
 .line-tail1 {
   background-color: #000;
@@ -1482,3 +1545,12 @@
        -o-transform: rotate(40deg);
           transform: rotate(40deg);
 }
+    </style>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: "css-wapuu",
+  });
+</script>
