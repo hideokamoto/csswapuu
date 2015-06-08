@@ -1,0 +1,77 @@
+<dom-module id="wapuu-ball">
+  <template>
+    <div class="ball"></div>
+    <div class="ball2"></div>
+    <div class="boll-light"></div>
+    <div class="w-circle"></div>
+    <div class="w-circle-inner"></div>
+  </template>
+  <style>
+
+    /*---------------------------------------
+    ボールの部分
+    ---------------------------------------*/
+    .ball {
+    background: #035683;
+    width: 214px;
+    height: 214px;
+    position: absolute;
+    top: 74px;
+    left: 60px;
+    border-radius: 50%;
+    }
+
+    .ball2 {
+    background-color: #035683;
+    width: 51px;
+    height: 12px;
+    position: absolute;
+    top: 124px;
+    left: 200px;
+    border-radius: 10px 70px 70px 48px / 10px 10px 20px 19px;
+    -webkit-transform: rotate(-166deg);
+     -moz-transform: rotate(-166deg);
+      -ms-transform: rotate(-166deg);
+       -o-transform: rotate(-166deg);
+          transform: rotate(-166deg);
+    z-index: 1;
+    }
+
+    .boll-light {
+    background: #06709c;
+    width: 154px;
+    height: 164px;
+    position: absolute;
+    top: 93px;
+    left: 62px;
+    border-radius: 170px 190px 198px 150px / 170px 190px 184px 204px;
+    }
+
+    .w-circle {
+    background: #fff;
+    width: 125px;
+    height: 140px;
+    position: absolute;
+    top: 104px;
+    left: 67px;
+    border-radius: 160px 140px 159px 140px / 180px 150px 178px 148px;
+    }
+
+    .w-circle-inner {
+    background: #06709c;
+    width: 113px;
+    height: 127px;
+    position: absolute;
+    top: 110px;
+    left: 71px;
+    border-radius: 160px 140px 161px 146px / 180px 150px 186px 145px;
+    }
+
+  </style>
+</dom-module>
+
+  <script>
+    Polymer({
+      is: "wapuu-ball",
+    });
+  </script>

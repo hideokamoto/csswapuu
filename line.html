@@ -1,0 +1,87 @@
+<dom-module id="wapuu-line">
+  <template>
+    <div class="line1"></div>
+    <div class="line2"></div>
+  </template>
+  <style>
+
+    /*---------------------------------------
+    線
+    ---------------------------------------*/
+
+    .line1 {
+    background-color: #000;
+    width: 234px;
+    height: 293px;
+    position: absolute;
+    top: 8px;
+    left: 83px;
+    border-radius: 120px 108px 129px 118px / 119px 145px 109px 145px;
+    }
+
+    .line1::after {
+    content: "";
+    background-color: #000;
+    width: 238px;
+    height: 260px;
+    position: absolute;
+    left: -19px;
+    bottom: -5px;
+    border-radius: 140px 140px 120px 142px / 148px 141px 100px 105px;
+    -webkit-transform: rotate(-114deg);
+       -moz-transform: rotate(-114deg);
+        -ms-transform: rotate(-114deg);
+         -o-transform: rotate(-114deg);
+            transform: rotate(-114deg);
+    }
+
+    .line1::before {
+    content: "";
+    background-color: #000;
+    width: 128px;
+    height: 69px;
+    position: absolute;
+    top: 125px;
+    left: 138px;
+    border-radius: 10px 70px 70px 48px / 10px 10px 20px 19px;
+    -webkit-transform: rotate(-89deg);
+     -moz-transform: rotate(-89deg);
+      -ms-transform: rotate(-89deg);
+       -o-transform: rotate(-89deg);
+          transform: rotate(-89deg);
+    }
+
+    .line2 {
+    background-color: #000;
+    width: 64px;
+    height: 24px;
+    position: absolute;
+    top: 75px;
+    left: 66px;
+    border-radius: 112px / 89px;
+    }
+
+    .line2::after {
+    content: "";
+    background-color: #000;
+    width: 44px;
+    height: 18px;
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    border-radius: 72px 14px 12px 14px / 14px 35px 5px 9px;
+    -webkit-transform: rotate(148deg);
+     -moz-transform: rotate(148deg);
+      -ms-transform: rotate(148deg);
+       -o-transform: rotate(148deg);
+          transform: rotate(148deg);
+    }
+
+  </style>
+</dom-module>
+
+  <script>
+    Polymer({
+      is: "wapuu-line",
+    });
+  </script>

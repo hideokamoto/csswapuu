@@ -18,8 +18,10 @@ Polymer1.0が使用できることが前提です。
 ```
 
 == 注意 ==
+
 Polymerはversion1.0、bowerを使って構築されていることを想定しています。
 
 == copyright ==
+
 css wapuu:[mismith0227](https://github.com/mismith0227)
 Polymer CSS wapuu:[hideokamoto](https://github.com/hideokamoto/)
