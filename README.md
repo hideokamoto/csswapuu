@@ -12,9 +12,9 @@ There is the file that customized csswapuu to WebComponents.
 This Components need Polymer 1.0.
 
 ```
-<!-- コンポーネントをインポートする -->
+<!-- Import CSS Wapuu Components -->
 <link rel="import" href="css-wapuu.html">
-<!-- 表示したい場所にタグを記述する -->
+<!-- Write the Polymer Components Tags -->
 <css-wapuu></css-wapuu>
 ```
 
